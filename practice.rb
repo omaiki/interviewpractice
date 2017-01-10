@@ -15,7 +15,8 @@
 
 
 
-
+p "pick an integer!"
+# 77150
 string = gets.chomp.to_s
 array = string.split("")
 a = 0
@@ -54,25 +55,25 @@ array.each do |x|
 end
 
   print 0.to_s + " "
-  puts a
+  p a
   print 1.to_s + " "
-  puts b
+  p b
   print 2.to_s + " "
-  puts c
+  p c
   print 3.to_s + " "
-  puts d
+  p d
   print 4.to_s + " "
-  puts e
+  p e
   print 5.to_s + " "
-  puts f
+  p f
   print 6.to_s + " "
-  puts g
+  p g
   print 7.to_s + " "
-  puts h
+  p h
   print 8.to_s + " "
-  puts i
+  p i
   print 9.to_s + " "
-  puts j
+  p j
 
 
   # RESULT:
