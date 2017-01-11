@@ -80,3 +80,19 @@ end
   # time: 0.102268
   # memory: 64 KiB
 
+
+
+
+
+
+
+
+
+
+  # ----------------------------------------------
+
+  N = gets.chomp
+p N.to_i * 2
+S = gets.chomp
+print S.to_s
+
