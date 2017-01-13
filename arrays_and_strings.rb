@@ -1,23 +1,12 @@
-# Implement an algorithm to determine if a string has all unique characters. What if you
-# can not use additional data structures?
-
-def unique_chars?(string)
-  string_array = string.chars
-  unique_array = string_array.uniq
-  if string_array == unique_array
-    return false
-  else
-    return true
-  end
-end
-
-
-
-
-#-------------------------------------------------------
 
 # Write code to reverse a C-Style String. (C-String means that “abcd” is represented as five characters, including the null character.)
 
+def reverse_string(string)
+  string.split('').reverse!.join
+end
+
+
+reverse_string("abcd")
 
 
 
