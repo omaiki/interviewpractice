@@ -1,26 +1,4 @@
 
-# Write code to reverse a C-Style String. (C-String means that “abcd” is represented as five characters, including the null character.)
-
-def reverse_string(string)
-  string.split('').reverse!.join
-end
-
-
-reverse_string("abcd")
-
-
-
-# -------------------------------------------------------
-
-# Design an algorithm and write code to remove the duplicate characters in a string
-# without using any additional bu#er. NOTE: One or two additional variables are !ne.
-# An extra copy of the array is not.
-# FOLLOW UP
-# Write the test cases for this method.
-
-
-
-# -------------------------------------------------------
 
 # Write a method to decide if two strings are anagrams or not
 
