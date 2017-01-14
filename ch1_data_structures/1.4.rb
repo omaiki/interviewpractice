@@ -1,16 +1,8 @@
-
-# Write a method to decide if two strings are anagrams or not
-
-def anagram?(x,y)
-    x = x.split('').sort!
-    y = y.split('').sort!
-    if x == y
-      p true
-    else
-      p false
-    end
-end
-
-anagram?("iceman", "cinema")
-
-# -------------------------------------------------------
+# Palindrome Permutation: Given a string, write a function to check if it is a permutation of a palindrome.
+# A palindrome is a word or phrase that is the same forwards and backwards. A permutation
+# is a rearrangement of letters. The palindrome does not need to be limited to just dictionary words.
+# 1.5
+# 1.6
+# EXAMPLE
+# Input: Tact Coa
+# Output: True (permutations: "taco cat", "atco eta", etc.)
