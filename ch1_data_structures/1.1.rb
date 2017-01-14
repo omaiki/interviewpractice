@@ -17,3 +17,14 @@ end
 
 
 #-------------------------------------------------------
+
+
+# 2nd IMPLEMENTATION
+
+def sort_for_unique(string)
+  string = string.split('').sort.join
+  (0...string.length).each do |i|
+    return false if s[i] = s[i+1]
+  end
+  true
+end

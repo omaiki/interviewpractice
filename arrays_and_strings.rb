@@ -6,17 +6,12 @@
 # Write the test cases for this method.
 
 
-def duplicate_chars(string)
-  array = string.split('')
-  char_counter = 0
-  array.length.times do |i|
-    return i if char_counter > 1
-    char_counter += 1
-  end
-
+def duplicate_chars(string, duplicate_char)
+  p string.squeeze(duplicate_char)
 end
 
-p duplicate_chars("hello")
+
+duplicate_chars("hello", "l")
 
 
 
@@ -24,6 +19,9 @@ p duplicate_chars("hello")
 
 
 # -------------------------------------------------------
+
+
+
 
 
 
