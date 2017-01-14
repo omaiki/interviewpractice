@@ -1,17 +1,3 @@
-# Implement an algorithm to determine if a string has all unique characters. What if you
-# can not use additional data structures?
-
-
-
-
-#-------------------------------------------------------
-
-# Write code to reverse a C-Style String. (C-String means that “abcd” is represented as five characters, including the null character.)
-
-
-
-
-# -------------------------------------------------------
 
 # Design an algorithm and write code to remove the duplicate characters in a string
 # without using any additional bu#er. NOTE: One or two additional variables are !ne.
@@ -20,15 +6,29 @@
 # Write the test cases for this method.
 
 
+def duplicate_chars(string)
+  array = string.split('')
+  char_counter = 0
+  array.length.times do |i|
+    return i if char_counter > 1
+    char_counter += 1
+  end
+
+end
+
+p duplicate_chars("hello")
+
+
+
+
+
 
 # -------------------------------------------------------
 
-# Write a method to decide if two strings are anagrams or not
 
 
 
 
-# -------------------------------------------------------
 
 # Write a method to replace all spaces in a string with ‘%20’
 
