@@ -1,11 +1,34 @@
 
+# Design an algorithm and write code to remove the duplicate characters in a string
+# without using any additional bu#er. NOTE: One or two additional variables are !ne.
+# An extra copy of the array is not.
+# FOLLOW UP
+# Write the test cases for this method.
 
-# Write a method to decide if two strings are anagrams or not
+
+def duplicate_chars(string)
+  array = string.split('')
+  char_counter = 0
+  array.length.times do |i|
+    return i if char_counter > 1
+    char_counter += 1
+  end
+
+end
+
+p duplicate_chars("hello")
+
+
 
 
 
 
 # -------------------------------------------------------
+
+
+
+
+
 
 # Write a method to replace all spaces in a string with ‘%20’
 
