@@ -9,7 +9,15 @@ def unique_chars?(string)
   else
     return true
   end
+
 end
+
+
+# alternate implementation
+ string.chars do |char|
+    if string_array.include?(char) == false
+      string_array << char
+    end
 
 
 
