@@ -5,6 +5,7 @@ def unique_chars?(string)
   string_array = string.chars
   unique_array = string_array.uniq
   if string_array == unique_array
+  # if string.chars == string.chars.uniq
     return false
   else
     return true
