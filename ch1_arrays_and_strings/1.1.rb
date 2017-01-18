@@ -6,30 +6,32 @@ def unique_chars?(string)
   unique_array = string_array.uniq
   if string_array == unique_array
   # if string.chars == string.chars.uniq
-    return false
-  else
     return true
+  else
+    return false
   end
 
 end
 
 
+
+
 # alternate implementation
- string.chars do |char|
-    if string_array.include?(char) == false
-      string_array << char
-    end
+ # string.chars do |char|
+ #    if string_array.include?(char) == false
+ #      string_array << char
+ #    end
 
 
 #-------------------------------------------------------
 
 
-# 2nd IMPLEMENTATION
+# IMPLEMENTATION FOR 'DUPLICATE' CHARACTERS
 
 def sort_for_unique(string)
   string = string.split('').sort.join
   (0...string.length).each do |i|
-    return false if s[i] = s[i+1]
+    return false if string[i] = string[i+1]
   end
   true
 end
