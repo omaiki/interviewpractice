@@ -26,12 +26,9 @@ class Node
 
 
 
-
-
-
   # Reverse a linked list given its head
 
-  def reverse_list(head)
+def reverse_list(head)
   return head if head == nil or head.next_node == nil
 
   new_head = reverse_list(head.next_node)
@@ -45,25 +42,34 @@ end
 
 
 
-  # Implement a stack using a linked list
+  # Delete a middle node of a linked list
+  # SEE STACK IMPLEMENTATION in stack_linked_list.rb
 
+  def delete_node(list)
+  end
 
-
-
-
-  # Delete a middle node linked list
 
 
   # Does this linkedlist have a cycle?
 
+def cycle?(node)
+
+  present = []
+  until node.next_node.nil?
+    return true if present.include? node
+    present << node
+    node = node.next
+  end
+  false
+end
+
 
 
 end
-head = Node.new 8, 5
-list_name = Node.new 7, nil
-p head
-p list_name
-head.next_node = list_name
-puts head
-
-p head.reverse_list(head).to_s
+# head = Node.new 8, 5
+# list_name = Node.new 7, nil
+# p head
+# p list_name
+# head.next_node = list_name
+# puts head
+# puts head.reverse_list(head).to_s
