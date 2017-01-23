@@ -9,6 +9,10 @@ class Node
     @next_node = next_node
   end
 
+
+
+  # print a linked_list, given a node
+
   def to_s
     current_node = self
     list = "["
@@ -20,19 +24,22 @@ class Node
 
   end
 
-head = Node.new 8, nil
-list_name = Node.new 7, nil
-p head
-p list_name
-head.next_node = list_name
-p head
 
 
-  # print a linked_list, given a node
 
 
 
   # Reverse a linked list given its head
+
+  def reverse_list(head)
+  return head if head == nil or head.next_node == nil
+
+  new_head = reverse_list(head.next_node)
+  head.next_node.next_node = head
+  head.next_node = nil
+  return new_head
+end
+
 
 
 
@@ -52,3 +59,11 @@ p head
 
 
 end
+head = Node.new 8, 5
+list_name = Node.new 7, nil
+p head
+p list_name
+head.next_node = list_name
+puts head
+
+p head.reverse_list(head).to_s
