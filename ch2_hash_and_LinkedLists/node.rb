@@ -9,4 +9,18 @@ class Node
     @next_node = next_node
   end
 
+  # print a linked_list
+  def to_s
+    current_node = self
+    list = "["
+    while current_node.next_node != nil
+      list = list + current_node.value.to_s + ", "
+      current_node = current_node.next_node
+    end
+    list = list + current_node.value.to_s + ']'
+  end
+
+
+
+
 end
