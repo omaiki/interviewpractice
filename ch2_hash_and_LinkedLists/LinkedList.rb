@@ -10,31 +10,43 @@ class LinkedList
     head = @head
   end
 
-  #Add to a linked_list
-  def add(value)
-    current = @head
-    while current.next_node != nil
-      current = current.next_node
-    end
-    current.next_node = Node.new(value, nil)
-  end
+  # #Add a value to a node of a linked_list
+  # def add(value)
+  #   current = @head
+  #   while current.next_node != nil
+  #     current = current.next_node
+  #   end
+  #   current.next_node = Node.new(value, nil)
+  # end
 
 
-  # Delete a value from a linkedlist
-  def delete(value)
-  end
+  # # Delete a value from a node of a linkedlist
+  # def delete(value)
+  #   #makes next node the head node
+  #   current.next_node = @head
+  #   if current.value = value
+  #     @head = current.next
+  #   else
+  #     while (current.next_node != nil) && (current.next.val != val)
+  #       current = current.next
+  #     end
+  #     unless current.next == nil
+  #       current.next = current.next.next
+  #     end
+  #   end
+  # end
 
 
-  #ALTERNATE
-  def return_list
-   elements = []
-   current = @head
-   while current.next_node != nil
-     elements << current.next_node
-     current = current.next_node
-   end
-   elements << current
-  end
+  # #ALTERNATE
+  # def return_list
+  #  elements = []
+  #  current = @head
+  #  while current.next_node != nil
+  #    elements << current.next_node
+  #    current = current.next_node
+  #  end
+  #  elements << current
+  # end
 
 
   # Reverse a linked list given its head node
