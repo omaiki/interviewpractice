@@ -70,5 +70,20 @@ class LinkedList
     false
   end
 
+  # delete middle node 
+
+  def self.delete_node(head_node, node_num)
+		count = 0
+		node = head_node
+		until count == node_num
+			previous = node
+			node = head_node.next_node
+			next_node = node.next_node
+			count += 1
+		end
+		previous.next_node = next_node
+		head_node
+	end
+
 
 end
